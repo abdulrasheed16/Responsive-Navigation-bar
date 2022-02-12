@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 120vh;
+}
+
+/* scroll bar css start  */
+
+body::-webkit-scrollbar-thumb{
+    background-color: #faa70cc4;
+}
+
+body::-webkit-scrollbar{
+    width: 13px;
+}
+
+/* scroll bar css end  */
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background: #03043d;
+    position: fixed;
+    top: 0px;
+    /* position: fixed; */
+    z-index: 11;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.596);
+  
+}
+
+label.logo{
+
+    line-height: 70px;
+    padding: 0 60px;
+    font-size: 34px;
+    font-weight: 600;
+    font-family: serif;
+    color: white;
+}
+
+nav ul{
+    float:right;
+    margin-right:  150px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 4px 6px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding: 0 20px;
+}
+
+a:hover{
+    color: #f9c449;
+}
+
+#search{
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.sear{
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    background: #f88b02;
+    cursor: pointer;
+}
+
+#menu-btn{
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin: 0 30px;
+    font-size: 16px;
+    display: none;
+}
+
+
+.bg img{
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* media quries  */
+
+@media (max-width: 1141px)
+{
+
+    label.logo{
+        font-size: 27px;
+        padding: 0 23px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1001px)
+{
+
+    #menu-btn{
+        display: block;
+    }
+
+    ul{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 70;
+        left: 0%;
+        /* background:#242125; */
+        text-align: center;
+justify-content: center;
+        transition: all .4s;
+        /* align-items: center; */
+        backdrop-filter: blur(10px);
+    }
+
+    nav ul li{
+        display: block;
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    ul{
+        left: -120%;
+    }
+
+    ul.active{
+        left: 0%;
+    }
+
+    }
+
